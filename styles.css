@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: darkslateblue;
+    display: flex;
+    z-index: 1000;
+}
+
+
+nav a{
+    font-size: 36px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    background-color: black;
+    z-index: 1000;
+}
+
+footer h2{
+    color: white;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times;
+    text-align: center;
+    margin: 10px;
+}
+
+.splash {
+    position: relative;
+    margin-top: 85px;
+    width: 100%;
+    height: 60px;
+    background-color: darkgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.splash h1{
+    text-align: center;
+    font-size: x-large;
+    font-family: Georgia, 'Times New Roman', Times;
+}
+
+.contentContainer{ 
+    position: relative;
+    margin-top: 10px;
+    margin-left: 50px;
+    padding: 15px;
+    background-color: lightsteelblue;
+    z-index: 100;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%; 
+    height: auto;
+}
+
+
+.contentBox {
+    width: 200px;
+    margin: 15px;
+    background-color: white;
+    padding: 15px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contentBox p{
+    width: auto;
+    flex-grow: 1;
+    margin-bottom: 15px;
+}
+
+.contentBox img {
+    height: 200px;
+    height: 250px;
+    margin-bottom: 10px;
+}
+
+.learnmore{
+    width: 150px;
+    background-color: darkblue;
+    border: 1px solid black;
+    text-align: center;
+    margin-top: auto;
+}
+
+.learnmore a{
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+}
+
+
+@media (max-width: 800px) {
+    .contentContainer {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .contentBox {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .contentBox p {
+        margin-top: 8px;
+    }
+
+    .contentBox img{
+        margin-bottom: 8px;
+    }
+}
+
+@media (min-width: 801px) {
+
+    .contentContainer {
+        width: 90%;
+        flex-wrap: wrap;
+    }
+
+    .contentBox {
+        width: 250px;
+        margin: 8px;
+    }
+
+    .contentBox p{
+        margin-right: 8px;
+    }
+}
